@@ -73,3 +73,9 @@ function toggleFieldset(el) {
 
   setFieldsetToggleState(fieldset);
 }
+
+jQuery(document).ready(function() {
+  jQuery('fieldset.header_collapsible').each(function(index) {
+    toggleFieldset(this);
+  });
+});
